@@ -13,13 +13,19 @@
 </head>
 
 <body>
-    <h1 style="text-align: center; color: rgb(223, 117, 20); text-shadow: 0 1px 1px rgba(4, 4, 5, 0.7);">Path of Exile
-        Quiz</h1>
+    <a href="index.html" style="text-decoration: none;">
+        <h1 style="text-align: center; color: rgb(223, 117, 20); text-shadow: 0 1px 1px rgba(4, 4, 5, 0.7);">
+            Path of Exile Quiz
+        </h1>
+    </a>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
         <button class="pure-button button-warning">
             Maps
         </button>
         <button class="pure-button button-warning">
+            Bases
+        </button>
+        <button onclick="window.location.href='uniques.html'" class="pure-button button-warning">
             Unique items
         </button>
         <button class="pure-button button-warning">
@@ -27,49 +33,86 @@
         </button>
         <div>
             <button class="pure-button button-warning">
-                All gems
-            </button>
-            <button class="pure-button button-warning">
-                Active skill gems
-            </button>
-            <button class="pure-button button-warning">
-                Support gems
+                Gems
             </button>
         </div>
         <div>
             <button class="pure-button button-warning">
-                All keystones
-            </button>
-            <button class="pure-button button-warning">
                 Keystones
             </button>
-            <button class="pure-button button-warning">
-                Timeless jewel keystones
-            </button>
+
         </div>
-        <div style="border-color: rgb(223, 117, 20);; border-radius: 10px; border-style:solid;">
-            <h3 style="margin-bottom: 0px; margin-top: 5px; margin-left: 30%;">Custom</h3>
+        <div style="background-color: rgb(223, 117, 20); border-radius: 10px;">
+            <h3 style="margin-bottom: 0px; margin-top: 5px; margin-left: 30%; color: white;">Custom</h3>
             <div style="display: flex; flex-direction:column;">
                 <div>
-                    <input type="checkbox"> <label>Maps</label>
+                    <input type="checkbox" id="mapsChkbox">
+                    <label for="mapsChkbox">Maps</label>
                 </div>
                 <div>
-                    <input type="checkbox"> <label>Unique items</label>
+                    <input type="checkbox" id="basesChkbox">
+                    <label for="basesChkbox">Bases</label>
                 </div>
                 <div>
-                    <input type="checkbox"> <label>Divination cards</label>
+                    <input type="checkbox" id="allUniquesChkbox">
+                    <label for="allUniquesChkbox">All uniques</label>
                 </div>
                 <div>
-                    <input type="checkbox"> <label>Active skill gems</label>
+                    <details>
+                        <summary style="color:white; margin-left: 8px;">Unique types</summary>
+                        <div>
+                            <input type="checkbox" id="uniqueWpsChkbox">
+                            <label for="uniqueWpsChkbox">Unique weapons</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uniqueArmChkbox">
+                            <label for="uniqueArmChkbox">Unique armour</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uniqueFlasksChkbox">
+                            <label for="uniqueFlasksChkbox">Unique flasks</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uniqueBeltsChkbox">
+                            <label for="uniqueBeltsChkbox">Unique belts</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uniqueRingsChkbox">
+                            <label for="uniqueRingsChkbox">Unique rings</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uniqueAmuletsChkbox">
+                            <label for="uniqueAmuletsChkbox">Unique amulets</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uniqueJewelsChkbox">
+                            <label for="uniqueJewelsChkbox">Unique jewels</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uniqueMapsChkbox">
+                            <label for="uniqueMapsChkbox">Unique maps</label>
+                        </div>
+                    </details>
                 </div>
                 <div>
-                    <input type="checkbox"> <label>Support gems</label>
+                    <input type="checkbox" id="divCardChkbox">
+                    <label for="divCardChkbox">Divination cards</label>
                 </div>
                 <div>
-                    <input type="checkbox"> <label>Keystones</label>
+                    <input type="checkbox" id="activeGemsChkbox">
+                    <label for="activeGemsChkbox">Active skill gems</label>
                 </div>
                 <div>
-                    <input type="checkbox"> <label>Timeless keystones</label>
+                    <input type="checkbox" id="supportGemsChkbox">
+                    <label for="supportGemsChkbox">Support gems</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="keystonesChkbox">
+                    <label for="keystonesChkbox">Keystones</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="timelessKeystonesChkbox">
+                    <label for="timelessKeystonesChkbox">Timeless keystones</label>
                 </div>
                 <button class="pure-button button-warning">
                     Go
@@ -78,7 +121,14 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
+<footer style="position: fixed; bottom: 20px;">
+    <a target="_blank" href="https://github.com/ctrpetersen/poeq">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            style="width: 30px; margin-left: 20px; border-radius: 20px;">
+    </a>
+</footer>
 
 </html>

@@ -34,3 +34,13 @@
 input {
     margin: 0.4rem;
 }
+
+label {
+    color: white;
+}
+
+body {
+    background-image: url('https://web.poecdn.com/protected/image/layout/sanctum-bg.jpg?v=1674770173378&key=i1cSw2_l9lxBzpH9_LW37g');
+    background-repeat: no-repeat;
+    background-color: black;
+}
